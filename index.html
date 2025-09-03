@@ -6,23 +6,22 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <main id="main">
-            <!-- Form section -->
-            <div class="contact-form-section">
+<body class="contact-page">
+        <main id="main">
+            <section class="contact-form-section">
                 <form>
-                    <h1 class="contact-form-heading">Reach <span>Out</span></h1>
-                    <div class="contact-form-intro">Curious about something? Complete these fields and "get in touch", as you humans say. 🤙</div>
+                    <h1 class="contact-form-heading">Reach <strong>Out</strong></h1>
+                    <article class="contact-form-intro">Curious about something? Complete these fields and "get in touch", as you humans say. 🤙</article>
                     <label for="name">Full name</label>
-                    <input class="contact-input" id="name" type="text" placeholder="Daniel Radcliffe" />
+                    <input class="contact-input" id="name" type="text" name="name" placeholder="Daniel Radcliffe" required/>
                     <label for="email">Email</label>
-                    <input class="contact-input" id="email" type="text" placeholder="da.real.harry@gmail.com" />
+                    <input class="contact-input" id="email" type="text" name="email" placeholder="da.real.harry@gmail.com" required/>
                     <label for="message">Message</label>
-                    <textarea class="contact-textarea" id="message" rows="4" cols="50" placeholder="Your message..."></textarea>
-                    <button class="contact-submit-button" type="button" onclick="submitForm()">Send message 🎉</button>
+                    <textarea class="contact-textarea" id="message" rows="4" cols="50" name="message" placeholder="Your message..." required></textarea>
+                    <button class="contact-submit-button" role="button" type="button" tabindex="0" aria-label="Click to send your message" aria-invalid="false" onclick="submitForm()">Send message 🎉</button>
                 </form>
-                <img class="contact-image" src="images/connect.jpg" alt="A robot hand and a human reaching for each other." />
-            </div>
+                <img class="contact-image" src="https://images.presentationgo.com/2025/04/human-ai-touch-connection.jpg" alt="A robot hand and a human reaching for each other." />
+            </section>
         </main>
-</body>
+    </body>
 </html>

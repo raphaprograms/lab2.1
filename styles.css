@@ -21,15 +21,15 @@ body, .contact-input, .contact-textarea  {
 }
 .contact-image {
     transform: rotate(90deg);
-    width: 900px;
-    margin-left: -60px;
+    width: 600px;
+    margin-left: 2.5%;
 }
 .contact-form-heading {
     font-size: 3rem;
     font-weight: bold;
     margin: 0;
 }
-.contact-form-heading span {
+.contact-form-heading strong {
     color: #007000;
 }
 .contact-form-intro {
@@ -66,4 +66,12 @@ body, .contact-input, .contact-textarea  {
 }
 .contact-submit-button:hover {
     background-color: #dddddd;
+}
+
+input:invalid {
+border: 2px solid red;
+}
+
+input:valid {
+border: 2px solid green;
 }
